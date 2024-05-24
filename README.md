@@ -1,5 +1,5 @@
 # Noi-Cocktail-Recipe
-Poof of Concept and Update Breakdown
+Proof of Concept and Update Breakdown
 
 Finished
 - Set up Project.
