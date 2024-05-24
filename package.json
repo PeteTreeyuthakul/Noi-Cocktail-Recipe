@@ -1,0 +1,39 @@
+{
+  "name": "noi-cocktail-recipe",
+  "version": "1.0.0",
+  "description": "1. A description of the scenario your project is operating in.\r  - Purpose : The Cocktail Recipe API aims to provide users with a comprehensive database of cocktail recipes from Noi Thai restaurant. It serves as a one-stop platform for cocktail enthusiasts, bartenders and manager to access a wide range of recipes for both classic and innovative cocktails\r  - Target Audience: This API targets Noi's employees, cocktail enthusiasts, and managers who want to integrate cocktail recipe functionality into their restaurant menus.\r  - Functionality: Users can perform various actions through the API, including:",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "jest --runInBand",
+    "ci": "jest --json --runInBand",
+    "tdd": "jest --watch --runInBand",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "preset": "@shelf/jest-mongodb",
+    "watchPathIgnorePatterns": [
+      "globalConfig"
+    ]
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.11"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "^4.1.7",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
