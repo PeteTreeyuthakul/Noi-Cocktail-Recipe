@@ -1,4 +1,27 @@
 # Noi-Cocktail-Recipe
+Poof of Concept and Update Breakdown
+Finished
+- Set up Project.
+- Connection to Mongodb.
+- Express server.
+- Function Route for users, items and menu.
+- Function Data Access Object (DAO) for user, item and menu.
+- Set up schema for user, item and menu.
+- Function Authentication and Authorization.
+- Set up Middleware.
+- Fast Test with Postman.
+
+On progress
+- All Test function.
+- Improve Middleware and all function if needed.
+- Prepare database and detail for presentation.
+- Slides for presentation.
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+Topic Proposal
 1. A description of the scenario your project is operating in.
  - Purpose : The Cocktail Recipe API aims to provide users with a comprehensive database of cocktail recipes from Noi Thai restaurant. It serves as a one-stop platform for cocktail enthusiasts, bartenders and manager to access a wide range of recipes for both classic and innovative cocktails
  - Target Audience: This API targets Noi's employees, cocktail enthusiasts, and managers who want to integrate cocktail recipe functionality into their restaurant menus.
@@ -48,7 +71,7 @@
         userId: {
           type: ObjectId,ref: "users",
         },
-        items: {
+        list: {
           type: [{ ObjectId, ref: "items" }],
         },
         total: { type: Number},
