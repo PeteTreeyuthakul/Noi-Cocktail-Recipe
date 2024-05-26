@@ -3,7 +3,6 @@ module.exports = {};
 
 module.exports.createUser = async (userObj) => {
   try {
-
     const { email, password } = userObj;
     await User.create({ email, password });
 
@@ -14,7 +13,6 @@ module.exports.createUser = async (userObj) => {
 
 module.exports.getUser= async (email)=> {
   try {
-    
     const user = await User.findOne({ email }); 
     return user;
 
@@ -25,10 +23,7 @@ module.exports.getUser= async (email)=> {
 
 module.exports.updateUserPassword= async (userId, password)=> {
   try {
-    console.log(password)
-    console.log(userId)
     const user = await User.findByIdAndUpdate(userId, { password }, { new: true });
-    console.log(user)
     return user;
 
   } catch (error) {

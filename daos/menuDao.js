@@ -2,15 +2,14 @@ const Menu = require('../models/menuModel');
 module.exports = {};
 
 module.exports.createMenu= async(userId, itemIds, number)=>{
-    try {
+  try {
+    const menu = await Menu.create({ userId, list: itemIds, number });
+    return menu;
 
-      const menu = await Menu.create({ userId, list: itemIds, number });
-      return menu;
-
-    } catch (error) {
-      throw new Error(`Error creating order: ${error.message}`);
-    }
+  } catch (error) {
+    throw new Error(`Error creating order: ${error.message}`);
   }
+}
 
 module.exports.findAllMenu= async () => {
   try {
@@ -29,7 +28,7 @@ module.exports.findAllMenu= async () => {
         password:0,
         roles:0
       }
-    );
+    ).select('number');
     return menus;
 
   } catch (error) {
@@ -54,8 +53,7 @@ module.exports.findMenuById= async (menuId) => {
         password:0,
         roles:0
       }
-    );
-    console.log(menu)
+    ).select('number');
     return menu;
 
   } catch (error) {
@@ -65,7 +63,7 @@ module.exports.findMenuById= async (menuId) => {
 
 module.exports.findUserMenu= async(userId)=> {
   try {
-    const menus = await Menu.find({ userId })
+    const menus = await Menu.find( {userId})
     .populate('list',
       { _id:0,
         __v:0,
@@ -80,7 +78,7 @@ module.exports.findUserMenu= async(userId)=> {
         password:0,
         roles:0
       }
-    );
+    ).select('number');
     return menus;
     
   } catch (error) {

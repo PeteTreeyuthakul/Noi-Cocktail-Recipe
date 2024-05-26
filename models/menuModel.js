@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { string } = require("prop-types");
 
 const menuSchema = new mongoose.Schema({
     userId: {
@@ -8,7 +7,7 @@ const menuSchema = new mongoose.Schema({
         required: true,
       },
     list: [{type: mongoose.Schema.Types.ObjectId, ref:"items"}],
-    number: [{ type: Number }],
+    number: { type: Number },
 });
 
 module.exports = mongoose.model("menu", menuSchema);
