@@ -1,4 +1,15 @@
 # Noi-Cocktail-Recipe
+Self-Evaluation
+I have learned how to build APIs, utilizing both basic and advanced features of MongoDB and Express. I tested my projects using both code-based testing and the Postman program. Additionally, I gained experience in setting up CI workflows. I focused on ensuring the security and quality of my APIs by implementing authentication and authorization mechanisms.
+
+One of the most valuable aspects of this learning experience has been problem-solving within my projects. As I deploy this API within my company, I recognize the need to incorporate additional functionalities based on user feedback. Despite this, my current function is working well. I anticipate positive feedback from users and expect it will create values to users.
+
+I am grateful for the challenge this opportunity presented. I am genuinely happy and proud of my achievements.
+
+Thank you.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
 Proof of Concept and Update Breakdown
 
 Finished
@@ -17,8 +28,6 @@ On progress
 - Improve Middleware and all function if needed.
 - Prepare database and detail for presentation.
 - Slides for presentation.
-
-
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 
