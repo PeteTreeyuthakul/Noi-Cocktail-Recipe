@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1716765630123" clover="3.2.0">
-  <project timestamp="1716765630123" name="All files">
+<coverage generated="1716769291882" clover="3.2.0">
+  <project timestamp="1716769291882" name="All files">
     <metrics statements="284" coveredstatements="239" conditionals="56" coveredconditionals="44" methods="38" coveredmethods="34" elements="378" coveredelements="317" complexity="0" loc="284" ncloc="284" packages="4" files="13" classes="13"/>
     <package name="Noi-Cocktail-Recipe">
       <metrics statements="26" coveredstatements="18" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="5"/>
