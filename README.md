@@ -51,18 +51,18 @@ Topic Proposal
     - Login
         Sign-up: POST /auth/signup
         Login: POST /auth/login
-        Change Password PUT /auth/password
+        Change Password: PUT /auth/password
     - Items (requires authentication)
         Create: POST /items - restricted to users with the "admin" & "manager" role.
-        Update a note: PUT /items/:id - restricted to users with the "admin & "manager" role.
+        Update: PUT /items/:id - restricted to users with the "admin & "manager" role.
         Delete: DELETE /items - restricted to users with the "admin" role.
         Get all items: GET /items - open to all users.
         Get specific item: GET /items/:id - open to all users.
         Get search item: GET/items/search - open to all users.
     - Menus (requires authentication)
         Create: POST /menus - restricted to users with the "admin" & "manager" role.
-        Get all items: GET /menus - return all the menus made by the manager making the request if not an admin user. If they are an admin user it should return all menus in the DB.
-        Get an menu: GET /menus/:id - return an menu with the items array containing the full item objects rather than just their _id. If the user is a manager user return a 404 if they did not place the menu. An admin user should be able to get any menu.
+        Get all menus: GET /menus - return all the menus made by the manager making the request if not an admin user. If they are an admin user, it should return all menus in the DB.
+        Get a menu: GET /menus/:id - return a menu with the items array containing the full item objects rather than just their _id. If the user is a manager user return a 404 if they did not place the menu. An admin user should be able to get any menu.
     - User entity:
         {
         "name": string;

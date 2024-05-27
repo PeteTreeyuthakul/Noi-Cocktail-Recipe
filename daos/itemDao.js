@@ -33,7 +33,7 @@ module.exports.findAllItems= async () => {
 
 module.exports.findItemById= async (itemId) => {
   try {
-    const item = await Item.findById(itemId);
+    const item = await Item.findById(itemId);  
     return item;
   } catch (error) {
     throw new Error('Error finding item by ID');
@@ -48,3 +48,12 @@ module.exports.updateItemById= async (itemId, newData) => {
     throw new Error('Error updating item by ID');
   }
 }
+
+module.exports.removeById = async (id) => {
+  try {
+    await Item.deleteOne({ _id: id }).lean();
+    return;
+  } catch (error) {
+    return null;
+  }
+};

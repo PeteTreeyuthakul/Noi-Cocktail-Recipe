@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1716773910643" clover="3.2.0">
-  <project timestamp="1716773910643" name="All files">
-    <metrics statements="284" coveredstatements="239" conditionals="56" coveredconditionals="44" methods="38" coveredmethods="34" elements="378" coveredelements="317" complexity="0" loc="284" ncloc="284" packages="4" files="13" classes="13"/>
+<coverage generated="1716791576706" clover="3.2.0">
+  <project timestamp="1716791576706" name="All files">
+    <metrics statements="302" coveredstatements="257" conditionals="62" coveredconditionals="50" methods="40" coveredmethods="37" elements="404" coveredelements="344" complexity="0" loc="302" ncloc="302" packages="4" files="13" classes="13"/>
     <package name="Noi-Cocktail-Recipe">
-      <metrics statements="26" coveredstatements="18" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="5"/>
+      <metrics statements="26" coveredstatements="22" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="6"/>
       <file name="server.js" path="C:\Users\au_wa\OneDrive\Desktop\UW Assignment\Back-End\Final-Project\Noi-Cocktail-Recipe\server.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
@@ -14,7 +14,7 @@
         <line num="10" count="3" type="stmt"/>
       </file>
       <file name="test-utils.js" path="C:\Users\au_wa\OneDrive\Desktop\UW Assignment\Back-End\Final-Project\Noi-Cocktail-Recipe\test-utils.js">
-        <metrics statements="20" coveredstatements="12" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="5"/>
+        <metrics statements="20" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="6"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
@@ -24,12 +24,12 @@
         <line num="15" count="3" type="stmt"/>
         <line num="16" count="3" type="stmt"/>
         <line num="19" count="3" type="stmt"/>
-        <line num="20" count="219" type="stmt"/>
+        <line num="20" count="228" type="stmt"/>
         <line num="23" count="3" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
@@ -38,9 +38,9 @@
       </file>
     </package>
     <package name="Noi-Cocktail-Recipe.daos">
-      <metrics statements="60" coveredstatements="48" conditionals="0" coveredconditionals="0" methods="12" coveredmethods="12"/>
+      <metrics statements="65" coveredstatements="52" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="13"/>
       <file name="itemDao.js" path="C:\Users\au_wa\OneDrive\Desktop\UW Assignment\Back-End\Final-Project\Noi-Cocktail-Recipe\daos\itemDao.js">
-        <metrics statements="23" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <metrics statements="28" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
@@ -56,14 +56,19 @@
         <line num="27" count="3" type="stmt"/>
         <line num="28" count="3" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
-        <line num="35" count="42" type="stmt"/>
-        <line num="36" count="42" type="stmt"/>
-        <line num="37" count="42" type="stmt"/>
+        <line num="35" count="43" type="stmt"/>
+        <line num="36" count="43" type="stmt"/>
+        <line num="37" count="43" type="stmt"/>
         <line num="39" count="0" type="stmt"/>
         <line num="44" count="4" type="stmt"/>
         <line num="45" count="4" type="stmt"/>
         <line num="46" count="4" type="stmt"/>
         <line num="48" count="0" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="1" type="stmt"/>
+        <line num="54" count="1" type="stmt"/>
+        <line num="55" count="1" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
       </file>
       <file name="menuDao.js" path="C:\Users\au_wa\OneDrive\Desktop\UW Assignment\Back-End\Final-Project\Noi-Cocktail-Recipe\daos\menuDao.js">
         <metrics statements="21" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
@@ -94,14 +99,14 @@
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="4" count="3" type="stmt"/>
-        <line num="5" count="142" type="stmt"/>
-        <line num="6" count="142" type="stmt"/>
-        <line num="7" count="142" type="stmt"/>
+        <line num="5" count="151" type="stmt"/>
+        <line num="6" count="151" type="stmt"/>
+        <line num="7" count="151" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="14" count="3" type="stmt"/>
-        <line num="15" count="282" type="stmt"/>
-        <line num="16" count="282" type="stmt"/>
-        <line num="17" count="282" type="stmt"/>
+        <line num="15" count="300" type="stmt"/>
+        <line num="16" count="300" type="stmt"/>
+        <line num="17" count="300" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
         <line num="25" count="2" type="stmt"/>
         <line num="26" count="2" type="stmt"/>
@@ -132,31 +137,31 @@
       </file>
     </package>
     <package name="Noi-Cocktail-Recipe.routes">
-      <metrics statements="188" coveredstatements="163" conditionals="54" coveredconditionals="44" methods="18" coveredmethods="17"/>
+      <metrics statements="201" coveredstatements="173" conditionals="60" coveredconditionals="48" methods="19" coveredmethods="18"/>
       <file name="auth.js" path="C:\Users\au_wa\OneDrive\Desktop\UW Assignment\Back-End\Final-Project\Noi-Cocktail-Recipe\routes\auth.js">
         <metrics statements="29" coveredstatements="25" conditionals="16" coveredconditionals="13" methods="3" coveredmethods="3"/>
         <line num="1" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
-        <line num="4" count="81" type="stmt"/>
-        <line num="5" count="81" type="stmt"/>
-        <line num="6" count="81" type="cond" truecount="2" falsecount="0"/>
+        <line num="4" count="84" type="stmt"/>
+        <line num="5" count="84" type="stmt"/>
+        <line num="6" count="84" type="cond" truecount="2" falsecount="0"/>
         <line num="7" count="7" type="stmt"/>
-        <line num="9" count="74" type="stmt"/>
-        <line num="10" count="74" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="77" type="stmt"/>
+        <line num="10" count="77" type="cond" truecount="1" falsecount="1"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="13" count="74" type="stmt"/>
-        <line num="14" count="74" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="77" type="stmt"/>
+        <line num="14" count="77" type="cond" truecount="2" falsecount="0"/>
         <line num="15" count="8" type="stmt"/>
-        <line num="17" count="66" type="stmt"/>
-        <line num="18" count="66" type="stmt"/>
+        <line num="17" count="69" type="stmt"/>
+        <line num="18" count="69" type="stmt"/>
         <line num="21" count="0" type="stmt"/>
         <line num="25" count="3" type="stmt"/>
-        <line num="26" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="26" count="5" type="cond" truecount="1" falsecount="1"/>
         <line num="27" count="0" type="stmt"/>
-        <line num="29" count="2" type="stmt"/>
-        <line num="30" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="31" count="1" type="stmt"/>
-        <line num="33" count="1" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="30" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="3" type="stmt"/>
         <line num="37" count="49" type="cond" truecount="1" falsecount="1"/>
         <line num="38" count="0" type="stmt"/>
         <line num="40" count="49" type="stmt"/>
@@ -180,7 +185,7 @@
         <line num="17" count="3" type="stmt"/>
       </file>
       <file name="itemsRoute.js" path="C:\Users\au_wa\OneDrive\Desktop\UW Assignment\Back-End\Final-Project\Noi-Cocktail-Recipe\routes\itemsRoute.js">
-        <metrics statements="38" coveredstatements="31" conditionals="4" coveredconditionals="2" methods="5" coveredmethods="5"/>
+        <metrics statements="49" coveredstatements="40" conditionals="8" coveredconditionals="5" methods="6" coveredmethods="6"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -213,15 +218,26 @@
         <line num="53" count="3" type="stmt"/>
         <line num="54" count="6" type="stmt"/>
         <line num="55" count="6" type="stmt"/>
-        <line num="56" count="6" type="stmt"/>
-        <line num="58" count="6" type="cond" truecount="1" falsecount="1"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="61" count="6" type="stmt"/>
-        <line num="64" count="0" type="stmt"/>
-        <line num="69" count="3" type="stmt"/>
+        <line num="56" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="59" count="6" type="stmt"/>
+        <line num="60" count="6" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="67" count="3" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="69" count="2" type="stmt"/>
+        <line num="70" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="71" count="1" type="stmt"/>
+        <line num="73" count="1" type="stmt"/>
+        <line num="75" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="82" count="0" type="stmt"/>
+        <line num="86" count="3" type="stmt"/>
       </file>
       <file name="menuRoute.js" path="C:\Users\au_wa\OneDrive\Desktop\UW Assignment\Back-End\Final-Project\Noi-Cocktail-Recipe\routes\menuRoute.js">
-        <metrics statements="37" coveredstatements="33" conditionals="10" coveredconditionals="9" methods="3" coveredmethods="3"/>
+        <metrics statements="39" coveredstatements="34" conditionals="12" coveredconditionals="10" methods="3" coveredmethods="3"/>
         <line num="1" count="3" type="stmt"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="stmt"/>
@@ -249,16 +265,18 @@
         <line num="42" count="3" type="stmt"/>
         <line num="43" count="4" type="stmt"/>
         <line num="44" count="4" type="stmt"/>
-        <line num="45" count="4" type="stmt"/>
-        <line num="46" count="4" type="cond" truecount="1" falsecount="1"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="49" count="4" type="cond" truecount="2" falsecount="0"/>
-        <line num="50" count="2" type="stmt"/>
-        <line num="52" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="53" count="1" type="stmt"/>
-        <line num="55" count="1" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="63" count="3" type="stmt"/>
+        <line num="45" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="48" count="4" type="stmt"/>
+        <line num="49" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="52" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="53" count="2" type="stmt"/>
+        <line num="55" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="62" count="0" type="stmt"/>
+        <line num="66" count="3" type="stmt"/>
       </file>
       <file name="usersRoute.js" path="C:\Users\au_wa\OneDrive\Desktop\UW Assignment\Back-End\Final-Project\Noi-Cocktail-Recipe\routes\usersRoute.js">
         <metrics statements="73" coveredstatements="65" conditionals="24" coveredconditionals="20" methods="5" coveredmethods="5"/>
@@ -273,38 +291,38 @@
         <line num="9" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
-        <line num="13" count="145" type="stmt"/>
-        <line num="14" count="145" type="stmt"/>
-        <line num="15" count="145" type="stmt"/>
-        <line num="16" count="145" type="stmt"/>
-        <line num="17" count="145" type="cond" truecount="2" falsecount="0"/>
+        <line num="13" count="154" type="stmt"/>
+        <line num="14" count="154" type="stmt"/>
+        <line num="15" count="154" type="stmt"/>
+        <line num="16" count="154" type="stmt"/>
+        <line num="17" count="154" type="cond" truecount="2" falsecount="0"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="21" count="144" type="cond" truecount="2" falsecount="0"/>
+        <line num="21" count="153" type="cond" truecount="2" falsecount="0"/>
         <line num="22" count="2" type="stmt"/>
-        <line num="25" count="142" type="stmt"/>
-        <line num="26" count="142" type="stmt"/>
-        <line num="27" count="142" type="stmt"/>
+        <line num="25" count="151" type="stmt"/>
+        <line num="26" count="151" type="stmt"/>
+        <line num="27" count="151" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="35" count="3" type="stmt"/>
-        <line num="36" count="137" type="stmt"/>
-        <line num="37" count="137" type="stmt"/>
-        <line num="38" count="137" type="stmt"/>
-        <line num="40" count="137" type="stmt"/>
-        <line num="41" count="137" type="stmt"/>
-        <line num="43" count="137" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="146" type="stmt"/>
+        <line num="37" count="146" type="stmt"/>
+        <line num="38" count="146" type="stmt"/>
+        <line num="40" count="146" type="stmt"/>
+        <line num="41" count="146" type="stmt"/>
+        <line num="43" count="146" type="cond" truecount="2" falsecount="0"/>
         <line num="44" count="1" type="stmt"/>
-        <line num="46" count="136" type="cond" truecount="2" falsecount="0"/>
+        <line num="46" count="145" type="cond" truecount="2" falsecount="0"/>
         <line num="47" count="2" type="stmt"/>
-        <line num="50" count="134" type="stmt"/>
-        <line num="51" count="134" type="cond" truecount="2" falsecount="0"/>
+        <line num="50" count="143" type="stmt"/>
+        <line num="51" count="143" type="cond" truecount="2" falsecount="0"/>
         <line num="52" count="4" type="stmt"/>
-        <line num="55" count="130" type="cond" truecount="2" falsecount="0"/>
-        <line num="56" count="45" type="stmt"/>
-        <line num="57" count="85" type="cond" truecount="2" falsecount="0"/>
-        <line num="58" count="35" type="stmt"/>
-        <line num="60" count="50" type="stmt"/>
-        <line num="62" count="130" type="stmt"/>
-        <line num="68" count="130" type="stmt"/>
+        <line num="55" count="139" type="cond" truecount="2" falsecount="0"/>
+        <line num="56" count="48" type="stmt"/>
+        <line num="57" count="91" type="cond" truecount="2" falsecount="0"/>
+        <line num="58" count="38" type="stmt"/>
+        <line num="60" count="53" type="stmt"/>
+        <line num="62" count="139" type="stmt"/>
+        <line num="68" count="139" type="stmt"/>
         <line num="71" count="0" type="stmt"/>
         <line num="75" count="3" type="stmt"/>
         <line num="76" count="3" type="stmt"/>

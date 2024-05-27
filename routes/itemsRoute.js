@@ -1,7 +1,7 @@
 const {Router} = require('express');
 const router = Router();
 const itemDao = require('../daos/itemDao');
-const {isAuthorized,isAdminOrManager} = require('./auth');
+const {isAuthorized,isAdminOrManager,isAdmin} = require('./auth');
 
 router.post('/', isAuthorized, isAdminOrManager, async (req, res, next) => {
   try {
@@ -53,11 +53,10 @@ router.get('/',isAuthorized, async (req, res, next) => {
 router.get('/:id',isAuthorized, async (req, res, next) => {
   try {
     const itemId = req.params.id;
-    const item = await itemDao.findItemById(itemId);
-
-    if (!item) {
-      return res.status(404).json({ error: 'Item not found' });
+    if (!itemId.match(/^[0-9a-fA-F]{24}$/)) {
+      return res.status(400).json({message: "ID is not a valid MongoDB _id, Please Check ID"})
     }
+    const item = await itemDao.findItemById(itemId);
     res.json(item);
     
   } catch (error) {
@@ -65,5 +64,23 @@ router.get('/:id',isAuthorized, async (req, res, next) => {
   }
 });
 
+router.delete("/:id",isAuthorized,isAdmin, async (req, res, next) => {
+  try {
+    const itemId = req.params.id;
+    if (!itemId.match(/^[0-9a-fA-F]{24}$/)) {
+      return res.status(400).json({message: "ID is not a valid MongoDB _id, Please Check ID"})
+    }
+    const item = await itemDao.findItemById(itemId);
+    
+    if (!item) {
+      return res.status(404).json({ error: 'Item not found' });
+    }
+
+    await itemDao.removeById(itemId);
+    res.sendStatus(200);
+  } catch(error) {
+    next(error);
+  }
+});
 
 module.exports = router;

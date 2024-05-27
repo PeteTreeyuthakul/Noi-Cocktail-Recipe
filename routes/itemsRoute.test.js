@@ -329,5 +329,38 @@ describe("/items", () => {
         expect(res.body).toContainEqual(expect.objectContaining(items.find(item => item.name === "item1",)));
       });
     });
+
+    describe("DELETE /:id", () => {  
+       let items;
+      beforeEach(async () => {
+        items = (await Item.insertMany([item0, item1, item2, item3])).map((i) => i.toJSON());
+        items.forEach((i) => (i._id = i._id.toString()));
+      });
+
+      it("should return 404 if no matching id", async () => {
+        const res = await request(server).delete("/items/123456")
+        .set("Authorization", "Bearer " + adminToken)
+        .send();
+        expect(res.statusCode).toEqual(400);
+      });
+
+      it("should return 403 if not admin", async () => {
+        const res = await request(server).delete("/items/123456")
+        .set("Authorization", "Bearer " + managerToken)
+        .send();
+        expect(res.statusCode).toEqual(403);
+      });
+  
+      it("should delete item %# by _id", async () => {
+        const itemDocBefore = await testUtils.findOne(Item, items[0]);
+        const res = await request(server).delete("/items/"+items[0]._id)
+        .set("Authorization", "Bearer " + adminToken)
+        .send();
+        const itemDocAfter = await testUtils.findOne(Item, { _id: itemDocBefore._id });
+  
+        expect(res.statusCode).toEqual(200);
+        expect(itemDocAfter).toEqual(null);
+      });
+    });
   });
 });
