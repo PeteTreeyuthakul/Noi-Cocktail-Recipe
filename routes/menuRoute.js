@@ -42,6 +42,9 @@ router.get('/', isAuthorized,isAdminOrManager, async (req, res, next) => {
 router.get('/:id', isAuthorized,isAdminOrManager, async (req, res, next) => {
   try {
     const menuId = req.params.id;
+    if (!menuId.match(/^[0-9a-fA-F]{24}$/)) {
+      return res.status(400).json({message: "ID is not a valid MongoDB _id, Please Check ID"})
+    }
     const menu = await menuDao.findMenuById(menuId);
     if (!menu) {
       return res.status(404).json({ error: 'Menu not found' });
