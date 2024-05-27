@@ -14,8 +14,9 @@ module.exports.search = async (query) =>{
   try{
     return Item.find(
       {$text: { $search: query}},
-      {score:{$meta:'textScore'}}
-    ).sort({ score: { $meta: "textScore" } })
+      {score:{$meta:'textScore'},score:0})
+      .sort({ score: { $meta: "textScore" } })
+    
   }catch (e) {
     throw e;
   } 

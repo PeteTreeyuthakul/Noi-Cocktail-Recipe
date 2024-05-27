@@ -5,7 +5,6 @@ const jwt = require('jsonwebtoken');
 const UserDAO = require('../daos/userDao');
 const {isAuthorized,isAdmin} = require('./auth');
 const User = require("../models/userModel");
-
 const secretUser ="secretKeyUser"
 const secretAdmin ="secretKeyAdmin"
 const secretManager ="secretKeyManager"
@@ -13,7 +12,6 @@ const secretManager ="secretKeyManager"
 router.post('/signup', async (req, res, next) => {
   const email= req.body.email;
   const password  = req.body.password;
-
   try {
     const existingUser = await UserDAO.getUser(email);
     if (existingUser) {
@@ -34,9 +32,7 @@ router.post('/signup', async (req, res, next) => {
   }
 });
 
-
 router.post('/login', async (req, res, next) => {
-
   const email = req.body.email;
   const password  = req.body.password;
   let secretKey =""
@@ -63,7 +59,6 @@ router.post('/login', async (req, res, next) => {
     }else{
         secretKey = secretUser
     }
-
     const token = jwt.sign({
       _id: user._id,
       email: user.email,
@@ -81,14 +76,12 @@ router.put('/password', isAuthorized, async (req, res, next) => {
   try {
     const newPassword  = req.body.password;
     const user = req.user;
-    //console.log(`user id pass from auth is ${user._id}`)
 
     if (!newPassword) {
       return res.status(400).json({ error: 'Empty password' });
     }
 
     const hashedNewPassword = await bcrypt.hash(newPassword, 10);
-    //console.log(hashedNewPassword)
     await UserDAO.updateUserPassword(user._id, hashedNewPassword);
     res.status(200).json({ message: 'Password updated successfully'},);
 
@@ -101,10 +94,6 @@ router.post('/:userId/roles',isAuthorized,isAdmin, async (req, res) => {
   try {
       const { userId } = req.params;
       const { roles } = req.body;
-
-      //console.log(req.body)
-      //console.log(roles)
-      // Find the user by ID
       const user = await User.findById(userId);
 
       if (!user) {
@@ -119,7 +108,6 @@ router.post('/:userId/roles',isAuthorized,isAdmin, async (req, res) => {
         return res.status(409).json({ error: `${roles} already assign to user` });
       }
 
-      // Add the new roles to the existing roles array
       user.roles.push(roles);
       await user.save();
 

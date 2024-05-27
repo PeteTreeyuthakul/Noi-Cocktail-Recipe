@@ -3,7 +3,6 @@ const router = Router();
 const itemDao = require('../daos/itemDao');
 const {isAuthorized,isAdminOrManager} = require('./auth');
 
-
 router.post('/', isAuthorized, isAdminOrManager, async (req, res, next) => {
   try {
     const itemAdd = req.body
@@ -33,14 +32,13 @@ router.put('/:id', isAuthorized, isAdminOrManager, async (req, res, next) => {
 router.get("/search",isAuthorized, async (req, res, next) => {
   try{
     let {query} = req.query;
-    console.log(query)
     const items = await itemDao.search(query);
     res.json(items);
+
   }catch(e) {
     next(error)
   }
 });
-
 
 router.get('/',isAuthorized, async (req, res, next) => {
   try {
@@ -51,7 +49,6 @@ router.get('/',isAuthorized, async (req, res, next) => {
     next(error)
   }
 });
-
 
 router.get('/:id',isAuthorized, async (req, res, next) => {
   try {
