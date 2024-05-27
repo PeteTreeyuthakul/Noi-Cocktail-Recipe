@@ -7,7 +7,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "test": "jest --runInBand --coverage --coverageDirectory='coverage'",
+    "test": "jest --runInBand --coverage --coverageDirectory=coverage",
     "ci": "jest --json --runInBand",
     "tdd": "jest --watch --runInBand",
     "start": "node index.js"
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@shelf/jest-mongodb": "^4.1.7",
-    "jest": "^29.5.0",
+    "jest": "^29.7.0",
     "supertest": "^6.3.3"
   }
 }
