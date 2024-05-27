@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
-      - run: npx test --runInBand --coverage --coverageDirectory=coverage
+      - run: npm test --runInBand --coverage --coverageDirectory=coverage
       - name: Output Test Summary
         if: success() || failure()
         run: npm run ci >> $GITHUB_STEP_SUMMARY
